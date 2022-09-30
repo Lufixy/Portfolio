@@ -1,10 +1,15 @@
 import { useEffect , useState  } from "react";
-
+import { Canvas } from "canvas";
 import { motion, AnimatePresence } from "framer-motion";
+import { set } from "nprogress";
 
 export default function SpotifyCard({ data }) {
 
     const [isLiked, setLiked] = useState(false);
+   
+
+
+
     return (
         <>
             {data ?(
@@ -35,7 +40,9 @@ export default function SpotifyCard({ data }) {
                 <i className="fas fa-ellipsis-h text-white text-lg" />
             </div>
         </div>
+       
     </div>
+
 </div>
 </div>
 </motion.div>

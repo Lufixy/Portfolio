@@ -29,7 +29,7 @@ function MyApp({ Component, pageProps }) {
   
   return (
     <>
-<div className='dark:bg-black bg-white h-screen'  >
+<div className='dark:bg-black bg-white '  >
 
 
 
