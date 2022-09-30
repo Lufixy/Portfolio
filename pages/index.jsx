@@ -60,7 +60,7 @@ export default function Home() {
                   </span>
 
                   <p className="pl-3 text-sm dark:text-white">
-                    Hi there, I'm a{" "} <span className="text-[#7289DA]">{_me.data.status}</span> developer
+                   Phasellus quis sollicitudin nisi. Nullam fermentum vel ante eu cursus. Curabitur vel sapien a nunc faucibus luctus. Duis iaculis magna ante. Maecenas eget rhoncus nisi. Quisque vitae tellus sit amet velit mollis tristique eu sed nulla. Duis iaculis pretium metus, tempor commodo risus facilisis et. Etiam viverra, libero ut consequat condimentum, diam mi semper risus, eu gravida tortor justo at massa. Praesent eget sollicitudin diam, bibendum maximus lacus.
                   </p>
 
                 
