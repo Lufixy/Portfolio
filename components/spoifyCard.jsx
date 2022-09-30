@@ -1,5 +1,4 @@
 import { useEffect , useState  } from "react";
-import { Canvas } from "canvas";
 import { motion, AnimatePresence } from "framer-motion";
 import { set } from "nprogress";
 
