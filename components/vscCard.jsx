@@ -1,6 +1,6 @@
 import { useEffect , useState  } from "react";
-
 import { motion, AnimatePresence } from "framer-motion";
+
 export default function VscCard({ data }) {
 
     const [isLiked, setLiked] = useState(false);

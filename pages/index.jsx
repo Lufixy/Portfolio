@@ -33,7 +33,7 @@ export default function Home() {
         <div className="w-full h-full flex justify-center items-center">
           {_me.status ? (
             <div className="px-5 w-full h-full">
-              <div className="w-full h-full flex justify-center items-center">
+              <div className="w-full h-full   md:flex justify-center items-center">
                 <div className="shrink-0 flex">
                   <img
                     className={
@@ -42,9 +42,9 @@ export default function Home() {
                     src={_me.data.avatar_url.replace(".webp", ".gif")}
                     alt=""
                   />
-                  <div className="relative w-full h-full">
+                  <div className="relative ">
                     <span
-                    className={`w-5 h-5 bg-[#181b24] rounded-full absolute right-4 top-24 -mr-2`}
+                    className={`w-5 h-5 bg-[#181b24] rounded-full absolute top-24 right-2`}
                   >
                     <a
                       className={`w-6 h-6   absolute pulse-avatar-${_me.data.status.toUpperCase()} `}
@@ -54,13 +54,13 @@ export default function Home() {
                     
                 </div>
 
-                <div className="">
+                <div className="mt-5">
                   <span className=" text-2xl pl-3 font-medium flex-none dark:text-white">
                     {_me.data.username}
                   </span>
 
-                  <p className="pl-3 text-sm dark:text-white">
-                   Phasellus quis sollicitudin nisi. Nullam fermentum vel ante eu cursus. Curabitur vel sapien a nunc faucibus luctus. Duis iaculis magna ante. Maecenas eget rhoncus nisi. Quisque vitae tellus sit amet velit mollis tristique eu sed nulla. Duis iaculis pretium metus, tempor commodo risus facilisis et. Etiam viverra, libero ut consequat condimentum, diam mi semper risus, eu gravida tortor justo at massa. Praesent eget sollicitudin diam, bibendum maximus lacus.
+                  <p className="pl-3 text-sm  dark:text-white ">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur aliquam incidunt voluptatem, ea itaque repellendus non explicabo officia. Quis nostrum officia obcaecati asperiores aperiam ipsum. Numquam rerum voluptate expedita necessitatibus?
                   </p>
 
                 

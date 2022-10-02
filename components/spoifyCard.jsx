@@ -1,6 +1,5 @@
 import { useEffect , useState  } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { set } from "nprogress";
 
 export default function SpotifyCard({ data }) {
 
