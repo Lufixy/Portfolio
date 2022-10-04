@@ -4,7 +4,7 @@ import config from '../../../config';
 export default async function handler(req, res) {
  
 
-    const {data} = await axios.get(`https://linkcord.js.org/api/v3/user/${config.discord.id}`) // if get error join discord server https://discord.gg/jkUX85mfBs
+    const {data} = await axios.get(`https://api.lanyard.rest/v1/users/${config.discord.id}`) // if get error join discord server https://discord.gg/jkUX85mfBs
    
     try {
 

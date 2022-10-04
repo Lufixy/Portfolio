@@ -1,15 +1,16 @@
 import { useEffect, useState } from "react";
-import { useRouter } from "next/router";
 import Tippy from "@tippyjs/react";
-import { motion, AnimatePresence } from "framer-motion";
+import config from "../config";
 import swr from "../lib/swr";
 import SpotifyCard from "../components/spoifyCard";
 import VscCard from "../components/vscCard";
 import Teach from "../components/skills";
+import About from "../components/about";
 import GithubCard from "../components/repositories";
 import { InfinitySpin } from 'react-loader-spinner'
+
+
 export default function Home() {
-  const router = useRouter();
 
   const [Change, setChange] = useState(false);
   const { data: me } = swr("api/v1/me");
@@ -26,69 +27,30 @@ export default function Home() {
     offline: "ring-[#747F8D]",
   };
 
+
   return (
     <>
+
     {me ? (
-      <div className="px-5 mt-10">
-        <div className="w-full h-full flex justify-center items-center">
-          {_me.status ? (
-            <div className="px-5 w-full h-full">
-              <div className="w-full h-full   md:flex justify-center items-center">
-                <div className="shrink-0 flex">
-                  <img
-                    className={
-                      "rounded-full ring-[3px] " + colors[_me.data.status]
-                    }
-                    src={_me.data.avatar_url.replace(".webp", ".gif")}
-                    alt=""
-                  />
-                  <div className="relative ">
-                    <span
-                    className={`w-5 h-5 bg-[#181b24] rounded-full absolute top-24 right-2`}
-                  >
-                    <a
-                      className={`w-6 h-6   absolute pulse-avatar-${_me.data.status.toUpperCase()} `}
-                    />
-                  </span>
-                  </div>
-                    
-                </div>
-
-                <div className="mt-5">
-                  <span className=" text-2xl pl-3 font-medium flex-none dark:text-white">
-                    {_me.data.username}
-                  </span>
-
-                  <p className="pl-3 text-sm  dark:text-white ">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur aliquam incidunt voluptatem, ea itaque repellendus non explicabo officia. Quis nostrum officia obcaecati asperiores aperiam ipsum. Numquam rerum voluptate expedita necessitatibus?
-                  </p>
-
-                
-                </div>
-              </div>
-            </div>
-          ) : (
-            <div>Loading...</div>
-          )}
-        </div>
-        <div className="mt-10">
-          {<SpotifyCard data={_me?.data?.activities.find(a => a.name === "Spotify")} />}
-       {<VscCard data={_me?.data?.activities.find(a => a.name === "Visual Studio Code")} />}
-        </div>
-            
+       
+        <div className="mt-10 px-5">
+          <About _me={_me} />
+          <SpotifyCard data={_me?.data?.spotify} />
+          <VscCard data={_me?.data?.activities.find(a => a.name === "Visual Studio Code")} />
+  
             <div className="mt-10">
               <GithubCard data={_github.data} />
-              </div>
               <Teach data={_skills} />
-       </div>
+            </div>  
+        </div>
+  
+
     ) : (
       <div className="w-full h-full flex justify-center items-center">
-      <InfinitySpin  
-     
-  width='200'
-/>
+      <InfinitySpin width='200' />
       </div>
     )}
+    
     </>
   );
 }

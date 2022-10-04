@@ -25,20 +25,21 @@ function MyApp({ Component, pageProps }) {
     nProgress.done();
   }, [router.asPath]);
 
- 
+  // Auto Title
+  for (const key in config.titles) {
+    if (config.titles[key].url === router.pathname) {
+      var title = config.titles[key].title;
+    }
+  }
+
+  
   
   return (
     <>
-<div className='dark:bg-black bg-white '  >
-
-
-
-    
+<div className='dark:bg-black bg-white min-h-screen'>
     <Head>
       <title>
-          {router.asPath ? config?.titles[router?.asPath] ? config?.titles[router?.asPath] + " | " + config?.title 
-          : "404 | " + config?.title
-          : "Loading | " + config?.title}
+          {title ? title + " | " + config?.title : "404 | " + config?.title} 
       </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta name="description" content={config.meta.description} />
@@ -48,13 +49,10 @@ function MyApp({ Component, pageProps }) {
   <Component {...pageProps}  />
   <Footer />
   </div>
-  
   </div>
   </>
-  
+
   );
-  
-  
 }
 
 export default MyApp

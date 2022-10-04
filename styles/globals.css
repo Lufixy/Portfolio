@@ -230,3 +230,134 @@
         box-shadow: 0 0 0 0 rgba(116, 127, 141, 0);
       }
     }
+    
+    /* Spotify Heart animation */
+
+
+    .svg {
+      height: 23px;
+      overflow: visible;
+      cursor: pointer;
+    }
+    
+    label {
+      transform: translateX(-25px);
+    }
+    
+    input[type=checkbox] {
+      display: none;
+    }
+    
+    input[type=checkbox] + label {
+ 
+      position: relative;
+      display: grid;
+      place-content: center;
+    }
+    input[type=checkbox] + label #center-heart #inner {
+      fill: transparent;
+      transition: 0.2s ease;
+    }
+    input[type=checkbox] + label #center-heart #outer {
+      fill: white;
+      transition: 0.2s ease;
+    }
+    input[type=checkbox] + label #left-hearts > *,
+    input[type=checkbox] + label #right-hearts > * {
+      opacity: 0;
+      transition: 0.2s ease;
+    }
+    
+    input[type=checkbox]:checked + label {
+      cursor: pointer;
+    }
+    input[type=checkbox]:checked + label::before, input[type=checkbox]:checked + label::after {
+      content: "";
+      display: grid;
+      border-radius: 100%;
+      position: absolute;
+      outline: 25px solid red;
+      outline-offset: -25px;
+      -webkit-animation: scalePulse 0.5s cubic-bezier(0.12, 0.84, 0.5, 0.44) forwards;
+              animation: scalePulse 0.5s cubic-bezier(0.12, 0.84, 0.5, 0.44) forwards;
+    }
+    input[type=checkbox]:checked + label::after {
+      opacity: 1;
+      transform: scale(0);
+      -webkit-animation-delay: 0.2s;
+              animation-delay: 0.2s;
+    }
+    input[type=checkbox]:checked + label #center-heart #inner {
+      fill: red;
+    }
+    input[type=checkbox]:checked + label #center-heart #outer {
+      fill: red;
+    }
+    input[type=checkbox]:checked + label #left-hearts > *,
+    input[type=checkbox]:checked + label #right-hearts > * {
+      transform-origin: center center;
+      -webkit-animation: floatingHearts 0.65s cubic-bezier(0.12, 0.84, 0.5, 0.44) forwards;
+              animation: floatingHearts 0.65s cubic-bezier(0.12, 0.84, 0.5, 0.44) forwards;
+    }
+    input[type=checkbox]:checked + label #right-hearts g:first-child {
+      -webkit-animation-delay: 0.3s;
+              animation-delay: 0.3s;
+    }
+    input[type=checkbox]:checked + label #right-hearts g:last-child {
+      -webkit-animation-delay: 0.1s;
+              animation-delay: 0.1s;
+    }
+    input[type=checkbox]:checked + label #left-hearts g:first-child {
+      -webkit-animation-delay: 0.2s;
+              animation-delay: 0.2s;
+    }
+    input[type=checkbox]:checked + label #left-hearts g:last-child {
+      -webkit-animation-delay: 0.5s;
+              animation-delay: 0.5s;
+    }
+    
+    @-webkit-keyframes floatingHearts {
+      0% {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      50% {
+        opacity: 0.5;
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+    }
+    
+    @keyframes floatingHearts {
+      0% {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      50% {
+        opacity: 0.5;
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+    }
+    @-webkit-keyframes scalePulse {
+      from {
+        transform: scale(0);
+      }
+      to {
+        transform: scale(1.1);
+        opacity: 0;
+      }
+    }
+    @keyframes scalePulse {
+      from {
+        transform: scale(0);
+      }
+      to {
+        transform: scale(1.1);
+        opacity: 0;
+      }
+    }

@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import Tippy from "@tippyjs/react";
-
+import config from "../../config";
 import swr from "../../lib/swr";
 
 export default function Footer() {
@@ -20,13 +20,13 @@ export default function Footer() {
     discord: {
       icon: "discord",
       alt: "Discord",
-      href: "https://discord.gg/QWQWQWQ",
+      href: `https://discord.com/users/${config.discord.id}`,
       target: "_blank",
     },
     github: {
       icon: "github",
       alt: "Github",
-      href: "https://github.com/kalashiexe",
+      href: `${config.social.github}`,
       target: "_blank",
     },
   };
@@ -43,8 +43,11 @@ export default function Footer() {
             <div className="w-full items-center  h-12">
               <div className="flex justify-between items-center">
                 <div className="flex items-center md:font-medium">
-                  <Tippy content="Merâ">
-                    <span className="bg-black/20 dark:bg-white/20 dark:text-white  px-3 py-1 font-bold text-sm rounded-md">
+                  <Tippy content="Merâ"  
+                                        className="dark:bg-gray-800/50 "
+
+                  >
+                    <span className="bg-black/20 dark:bg-gray-800/50 dark:text-white  px-3 py-1 font-bold text-sm rounded-md">
                       v1.0
                     </span>
                   </Tippy>
@@ -57,6 +60,7 @@ export default function Footer() {
                       placement="top"
                       theme="light"
                       arrow={false}
+                      className="dark:bg-gray-800/50"
                      >
                     <button onClick={() => randomcolor()} className={`px-1 fas fa-heart ${colors} text-lg`} />
                     </Tippy>
@@ -70,12 +74,14 @@ export default function Footer() {
                     href={logo.discord.href}
                     target={logo.discord.target}
                   >
-                    <Tippy content={logo.discord.alt}>
+                    <Tippy content={logo.discord.alt}                       className="dark:bg-gray-800/50"
+>
                       <i className={`fab fa-${logo.discord.icon} dark:text-white`} />
                     </Tippy>
                   </a>
                   <a href={logo.github.href} target={logo.github.target}>
-                    <Tippy content={logo.github.alt}>
+                    <Tippy content={logo.github.alt}                       className="dark:bg-gray-800/50"
+>
                       <i className={`fab fa-${logo.github.icon} dark:text-white`} />
                     </Tippy>
                   </a>

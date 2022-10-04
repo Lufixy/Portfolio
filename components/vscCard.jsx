@@ -19,7 +19,7 @@ export default function VscCard({ data }) {
             <div>
                 <div className="flex justify-between items-center">
                     <div className="flex items-center">
-                        <img src={data?.url?.large_image} alt="" className="w-[85px] p-[8px] h-[85px] rounded-xl" />
+                        <img src={`https://cdn.discordapp.com/app-assets/${data?.application_id}/${data?.assets.large_image}.png`} alt="" className="w-[85px] p-[8px] h-[85px] rounded-xl" />
                         <div className="ml-3">
                             <div className="shrink-0">
                             <span className="text-white font-bold">{data?.details}</span>
