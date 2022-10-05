@@ -19,7 +19,7 @@ export default function About({ _me }) {
                     className={
                       "rounded-full ring-[3px] " + colors[_me.data.discord_status]
                     }
-                    src={`https://cdn.discordapp.com/avatars/${_me.data.discord_user.id}/${_me.data.discord_user.avatar}.png` } 
+                    src={`https://cdn.discordapp.com/avatars/${_me.data.discord_user.id}/${_me.data.discord_user.avatar}.gif` } 
                     alt=""
                   />
                   <div className="relative ">
