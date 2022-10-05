@@ -21,7 +21,7 @@ module.exports = {
         url: 'https://kalashi.me',
         image: 'https://www.pngkey.com/png/full/548-5486560_roblox-icon-roblox-cheez-it-logo.png',
     },
-    title: 'Kalashi.me',
+    title: 'Kalashi',
     titles:[
       {title: 'Home', url: '/'},
     

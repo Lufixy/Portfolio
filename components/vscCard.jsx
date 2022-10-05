@@ -37,13 +37,7 @@ export default function VscCard({ data }) {
     </div>
 </div>
 </div>
-</motion.div>
-            )
-            :(
-<>
-
-</>
-            )}
+</motion.div> ):(null)}
         </>
     )
 }

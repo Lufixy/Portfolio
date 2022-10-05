@@ -1,9 +1,7 @@
-import { useEffect , useState  } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function SpotifyCard({ data }) {
 
-    const [isLiked, setLiked] = useState(false);
    
 
 
@@ -79,7 +77,7 @@ export default function SpotifyCard({ data }) {
 </motion.div>
             )
             :(
-<></>
+                null
             )}
                 
         

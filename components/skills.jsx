@@ -1,5 +1,4 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { useEffect , useState  } from "react";
 
 export default function Teach({ data }) {
   return( 
@@ -15,7 +14,7 @@ export default function Teach({ data }) {
             <div className="flex mt-5 flex-wrap">
               
               {data ? (
-                data.map((item, index) => (
+                data.map?.((item, index) => (
                   
                   <div 
                     className="w-full cursor-pointer transition-all duration-200 hover:shadow-md hover:scale-[1.02] md:w-1/2 lg:w-1/3 mt-2 pr-2"

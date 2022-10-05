@@ -8,11 +8,9 @@ import "tippy.js/animations/shift-away.css";
 import { useState, useEffect } from "react";
 import Router, { useRouter } from "next/router";
 import nProgress from "nprogress";
-import Cookies from "universal-cookie";
 
 function MyApp({ Component, pageProps }) {
   // Nprogress
-  const cookies = new Cookies();
 
   const router = useRouter();
 
@@ -26,14 +24,13 @@ function MyApp({ Component, pageProps }) {
   }, [router.asPath]);
 
   // Auto Title
+  
   for (const key in config.titles) {
     if (config.titles[key].url === router.pathname) {
       var title = config.titles[key].title;
     }
   }
 
-  
-  
   return (
     <>
 <div className='dark:bg-black bg-white min-h-screen'>

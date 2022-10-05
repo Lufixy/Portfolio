@@ -1,6 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 
 export default function respo({ data }) {
     return (
@@ -13,7 +12,7 @@ export default function respo({ data }) {
               Github Repositories
             </div>
             <div className="w-full h-full mt-5 ">
-                {data?.slice(0,8)?.sort((a,b) => b.stargazers_count - a.stargazers_count)?.map((repo,index) => (
+                {data?.slice(0,8)?.sort((a,b) => b.stargazers_count - a.stargazers_count)?.map?.((repo,index) => (
                     <Link href={repo?.html_url} key={index}>
                     <div
                     className="w-full bg-gray-400/50 hover:bg-gray-800/40 dark:bg-[#0c1016] dark:hover:bg-[#0c1016]/90 shadow-lg hover:scale-[1.02]  rounded-md  cursor-pointer transition-all duration-200   mt-5 md:w-1/2 lg:w-1/3 pr-2"

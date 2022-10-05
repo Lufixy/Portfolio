@@ -3,11 +3,9 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import config from '../../config';
 export default function Header() {
-    const router = useRouter();
     
 
     const [colorTheme, setTheme] = darkTheme();
-    const [hamburgermenu, sethamburgermenu] = useState(false);
 
 
     return ( 

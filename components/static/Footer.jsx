@@ -1,12 +1,9 @@
-import { useRouter } from "next/router";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import Tippy from "@tippyjs/react";
 import config from "../../config";
-import swr from "../../lib/swr";
 
 export default function Footer() {
-  const router = useRouter();
 
 
   const [colors , setColors] = useState("text-red-500");
