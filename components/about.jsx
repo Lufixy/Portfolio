@@ -52,7 +52,7 @@ export default function About({ _me ,spotify}) {
                    </span>
                   
                   </div>
-                  <p className="pl-3 text-md w-96  dark:text-white/50 ">
+                  <p className="pl-3 text-md md:w-1/2 lg:w-1/3  dark:text-white/50 ">
                     {config.about.description}
                   </p>
                   <div className="ml-3  -mt-3">

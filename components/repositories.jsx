@@ -24,11 +24,11 @@ export default function respo({ data }) {
                       exit={{ opacity: 0 }}
                       transition={{ duration: 1 }}
                     >
-                      <div className=" translation duration-300  rounded-lg px-5 p-3 ">
+                      <div className=" translation duration-300   rounded-lg px-2 md:px-4 lg:px-5 p-2 ">
                           <h1 className="text-lg font-medium text-black dark:text-white">{repo?.name}</h1>
                           <p className="text-sm text-black dark:text-white">{repo?.description}</p>
                           <div className="flex justify-between items-center mt-9">
-                            <div className="text-black dark:text-white">
+                            <div className="text-black m dark:text-white">
                             by <span className="text-sm font-bold text-gray-800/95 dark:text-white ml-1"> {repo?.owner?.login}</span>
                             </div>
                             <div className="flex items-center ml-5">
