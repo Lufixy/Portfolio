@@ -10,7 +10,7 @@ export default function respo({ data }) {
         </div>
         Github Repositories
       </div>
-      <div className="w-full  mt-5 flex gap-3 flex-wrap ">
+      <div className="w-full  mt-5 flex gap-3 grid-cols-1 lg:grid-cols-3 ">
         {data
           ?.slice(0, 8)
           ?.sort((a, b) => b.stargazers_count - a.stargazers_count)
