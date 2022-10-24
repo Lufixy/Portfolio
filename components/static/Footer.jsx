@@ -49,8 +49,8 @@ export default function Footer() {
                     </span>
                   </Tippy>
                   </div>
-                  <div>
-                  <span  className="ml-3 dark:text-white items-center md:font-medium ">
+                  <div className="hidden sm:block">
+                  <span  className="ml-3 hidden sm:block dark:text-white items-center md:font-medium ">
                     Developed with{" "}
                     <Tippy
                       content="Merâ"
@@ -61,7 +61,12 @@ export default function Footer() {
                      >
                     <button onClick={() => randomcolor()} className={`px-1 fas fa-heart ${colors} text-lg`} />
                     </Tippy>
-                    {" "}by Kalashi
+                    {" "}by <a href={config.social.github}><span className="text-indigo font-bold underline">Kalashi</span></a>
+                  </span>
+                </div>
+                <div className="block sm:hidden">
+                <span  className="px-1  text-[13px]  dark:text-white items-center md:font-medium ">
+                    Developed by <span className="text-indigo font-bold underline">Kalashi</span>
                   </span>
                 </div>
 
