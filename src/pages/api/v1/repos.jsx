@@ -6,7 +6,7 @@ export default async function handler(req, res) {
 
     const {data} = await axios.get(`https://api.github.com/users/kalashiexe/repos`,{
         headers: {
-            Authorization: `token ${config.github.token}`,
+            Authorization: `token ${config.github.token1}+${config.github.token2}`,
         }
     }) 
    
