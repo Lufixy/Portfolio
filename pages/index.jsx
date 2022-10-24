@@ -3,6 +3,7 @@ import Teach from "../components/skills";
 import About from "../components/about";
 import GithubCard from "../components/repositories";
 import axios from "axios";
+import config from "../config";
 
 export default function Home({ data }) {
 
@@ -35,7 +36,7 @@ export default function Home({ data }) {
 //server side props
 
 export async function getServerSideProps() {
-  const res  = await axios.get("http://localhost:3000/api/v1/teach");
+  const res  = await axios.get(config.meta.url +"/api/v1/teach");
   const data = await res.data;
   const datas =  JSON.stringify(data);
   return {
