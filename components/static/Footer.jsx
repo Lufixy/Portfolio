@@ -36,7 +36,7 @@ export default function Footer() {
         transition={{ duration: 0.6 }}
       >
       
-          <div className="px-4  mt-10 ">
+          <div className="px-10  mt-10 sm:mb-0 mb-16 ">
             <div className="w-full items-center  h-12">
               <div className="flex justify-between items-center">
                 <div className="flex items-center md:font-medium">
@@ -45,7 +45,7 @@ export default function Footer() {
 
                   >
                     <span className="bg-black/20 dark:bg-gray-800/50 dark:text-white  px-3 py-1 font-bold text-sm rounded-md">
-                      v1.0
+                      v1.2
                     </span>
                   </Tippy>
                   </div>

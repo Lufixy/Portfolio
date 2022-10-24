@@ -34,7 +34,7 @@ export default async(req, res) => {
         },
         {
             "name": "TailwindCSS",
-            "src": "https://softwareer.net/icons/08c28fcf979530f509",
+            "src": "https://ph-files.imgix.net/2e26f07f-e5e5-411e-ba1e-e92c4083bd92.png?auto=format&fit=crop",
         },
         {
             "name": "Next.js",
@@ -62,7 +62,7 @@ export default async(req, res) => {
         },
         {
             "name": "Alpine.js",
-            "src": "https://softwareer.net/icons/b025b3fbdc91d079fc",
+            "src": "https://sperovita.gallerycdn.vsassets.io/extensions/sperovita/alpinejs-syntax-highlight/1.0.1/1642647041367/Microsoft.VisualStudio.Services.Icons.Default",
         },
         {
             "name": "Yarn",

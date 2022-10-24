@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-<div className='dark:bg-black bg-white min-h-screen'>
+<div className='dark:bg-back bg-[#f3f4f6] min-h-screen border-t-indigo border-t-4 scrollbar-thin scrollbar-thumb-indigo  h-screen overflow-y-scroll'>
     <Head>
       <title>
           {title ? title + " | " + config?.title : "404 | " + config?.title} 
@@ -41,7 +41,7 @@ function MyApp({ Component, pageProps }) {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta name="description" content={config.meta.description} />
     </Head>
-    <div className='mx-auto max-w-4xl'>
+    <div className='mx-auto max-w-7xl '>
     <Header />
   <Component {...pageProps}  />
   <Footer />

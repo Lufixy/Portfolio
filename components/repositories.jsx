@@ -1,12 +1,12 @@
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
-
+import Image from "next/image";
 export default function respo({ data }) {
     return (
-        <div className="w-full h-full ">
+        <div className="w-full h-full p-4">
             <div className="text-2xl font-bold flex items-center text-black dark:text-white  ">
-             <div className="w-10 h-10 bg-black dark:bg-white rounded-full items-center flex justify-center mr-2"> 
-                  <i className="ml-2 fab text-white dark:text-black z-index-2 fa-github text-2xl mr-2" />
+             <div className="w-10 h-10 items-center flex justify-center mr-2"> 
+                  <i className="ml-2 fab text-indigo z-index-2 fa-github text-4xl mr-2" />
              </div>
            
               Github Repositories
@@ -15,7 +15,7 @@ export default function respo({ data }) {
                 {data?.slice(0,8)?.sort((a,b) => b.stargazers_count - a.stargazers_count)?.map?.((repo,index) => (
                     <Link href={repo?.html_url} key={index}>
                     <div
-                    className="w-full bg-gray-400/50 hover:bg-gray-800/40 dark:bg-[#0c1016] dark:hover:bg-[#0c1016]/90 shadow-lg hover:scale-[1.02]  rounded-md  cursor-pointer transition-all duration-200   mt-5 md:w-1/2 lg:w-1/3 pr-2"
+                    className="w-full h-28 border-[1px] border-[#e2e3e5] dark:border-[#1a1a1c]  bg-[#fafcfb] dark:bg-[#151516] shadow-lg   rounded-md  cursor-pointer transition-all duration-200   mt-8 md:w-1/2 lg:w-1/3 pr-2"
                     key={index}
                   >
                     <motion.div
@@ -24,43 +24,32 @@ export default function respo({ data }) {
                       exit={{ opacity: 0 }}
                       transition={{ duration: 1 }}
                     >
-                      <div className=" translation duration-300  rounded-lg p-5">
-                        <div className=" justify-between items-center">
-                          <div className="flex items-center">
-                            <img
-                              className="w-12 h-12 rounded-full mr-4 "
-                              src={repo?.owner.avatar_url}
-                              alt={repo?.owner.login}
-                            />
-                            <div className="text-sm">
-                              <p className="font-bold text-black dark:text-white">
-                                {repo?.owner.login}
-                              </p>
-                              <p className="text-black dark:text-white">{repo?.name}</p>
+                      <div className=" translation duration-300  rounded-lg px-5 p-3 ">
+                          <h1 className="text-lg font-medium text-black dark:text-white">{repo?.name}</h1>
+                          <p className="text-sm text-black dark:text-white">{repo?.description}</p>
+                          <div className="flex justify-between items-center mt-9">
+                            <div className="text-black dark:text-white">
+                            by <span className="text-sm font-bold text-gray-800/95 dark:text-white ml-1"> {repo?.owner?.login}</span>
                             </div>
-                            
-                          </div>
-                          <div className="flex justify-between mt-5  items-center">
-                            <div> 
-                              <p className="text-black dark:text-white">
-                              <i class="text-black dark:text-white mr-2 fa-solid fa-code"></i>
-                              {repo?.language || "Empty"}
-                            </p>
-                            </div>
-                            <div className="flex space-x-3">
+                            <div className="flex items-center ml-5">
+                                <div> 
+                                   <i className="fas fa-star text-yellow-400 mr-1" />
+                                   <span className="text-sm font-bold text-gray-800/95 dark:text-white">{repo?.stargazers_count} Star</span>
+                                </div>
+                                <div className="flex items-center ml-5">
+                                    <div>
+                                      <i className="fas fa-code-branch text-indigo mr-1" />
+                                      <span className="text-sm font-bold text-gray-800/95 dark:text-white">{repo?.forks_count} Fork</span>
+                                    </div>
+                                </div>
+                              </div>
 
-                           
-                            <p className="text-black dark:text-white">
-                              <i className="text-black dark:text-white mr-2 fa-solid fa-star"></i>
-                              {repo?.stargazers_count}
-                            </p>
-                            <p className="text-black dark:text-white">
-                              <i className="text-black dark:text-white mr-2 fa-solid fa-code-branch"></i>
-                              {repo?.forks_count}
-                            </p>
+                             
+
+                              
+                         
+
                             </div>
-                          </div>
-                        </div>
                       </div>
                     </motion.div>
                   </div>

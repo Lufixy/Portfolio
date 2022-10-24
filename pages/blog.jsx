@@ -7,7 +7,7 @@ export default function Blog() {
                 <h1 className="text-6xl font-bold text-black dark:text-white">
                     Coming Soon
                 </h1>
-                <button className="bg-gray-800/50 mt-4 text-white px-4 py-2 rounded-md hover:bg-gray-700" onClick={() => router.back()}>Go Back</button>
+                <button className="bg-indigo mt-4 translation duration-300 text-white px-4 py-2 rounded-md hover:bg-indigo/80" onClick={() => router.back()}>Go Back</button>
             </main>
         </div>
 

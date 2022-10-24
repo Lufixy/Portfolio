@@ -9,7 +9,7 @@ export default function Error() {
             <h1 className="text-3xl font-bold text-center text-black dark:text-white">Error !</h1>
             <p className="text-center text-black dark:text-white mt-3">The page you are looking for does not exist.</p>
             <div className="flex justify-center">
-                <button className="bg-gray-800/50 mt-4 text-white px-4 py-2 rounded-md hover:bg-gray-700" onClick={() => router.push('/')}>Go Back</button>
+            <button className="bg-indigo mt-4 translation duration-300 text-white px-4 py-2 rounded-md hover:bg-indigo/80" onClick={() => router.back()}>Go Back</button>
             </div>  
         </div>
 
