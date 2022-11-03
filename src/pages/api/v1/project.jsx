@@ -1,42 +1,12 @@
 export default async(req, res) => { 
     const project = [
         {
-            "name": "Project 1",
-            "description": "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod",
-            "src": "",
-            "html_url": ""
+            "name": "Kalashi.me",
+            "description": "A personal website built with Next.js and Tailwind CSS",
+            "html_url": "https://github.com/Kalashiexe/Kalashi.me",
+            "image": "https://i.imgur.com/x7J5oG0"
         },
-        {
-            "name": "Project 1",
-            "description": "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod",
-            "src": "",
-            "html_url": ""
-        },
-        {
-            "name": "Project 1",
-            "description": "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod",
-            "src": "",
-            "html_url": ""
-        },
-        {
-            "name": "Project 1",
-            "description": "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod",
-            "src": "",
-            "html_url": ""
-        },
-        {
-            "name": "Project 1",
-            "description": "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod",
-            "src": "",
-            "html_url": ""
-        },
-        {
-            "name": "Project 1",
-            "description": "lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod",
-            "src": "",
-            "html_url": ""
-        },
-
+        
 
     ]
     res.status(200).json(project)
