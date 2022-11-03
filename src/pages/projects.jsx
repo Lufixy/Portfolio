@@ -1,6 +1,7 @@
 import axios from "axios";
 import config from "../../config";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 
 export default function Projects({ data }) {
   return (
@@ -20,6 +21,7 @@ export default function Projects({ data }) {
         <div className="flex justify-center">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
             {data.map?.((project, index) => (
+              <Link href={project?.html_url || "#" } key={index}>
               <div
                 key={index}
                 className="border-[1px] border-[#e2e3e5] dark:border-[#1a1a1c]   bg-[#fafcfb] dark:bg-[#151516] hover:scale-[1.02] rounded-md  cursor-pointer transition-all duration-200 shadow-2xl"
@@ -27,15 +29,11 @@ export default function Projects({ data }) {
                 <div className="p-5">
                   <div className="flex justify-between items-center">
                     <div className=" items-center">
-                      {project?.image ? (
-                        <img
+                    <img
                           className="w-full h-24 rounded-md  mr-4 "
                           src={project?.image}
                           alt={project?.name}
                         />
-                      ) : (
-                        <div className="w-full h-24 rounded-md mr-4 bg-black dark:bg-white" />
-                      )}
                       <div className="text-sm mt-2">
                         <p className="font-bold text-black dark:text-white">
                           {project?.name}
@@ -48,6 +46,7 @@ export default function Projects({ data }) {
                   </div>
                 </div>
               </div>
+              </Link>
             ))}
           </div>
         </div>
