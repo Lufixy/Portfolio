@@ -31,7 +31,7 @@ export default function About({ _me, spotify }) {
                     colors[_me.data.discord_status]
                   }
                   src={_me.data.discord_user.avatar.startsWith('a_') ? `https://cdn.discordapp.com/avatars/${_me.data.discord_user.id}/${_me.data.discord_user.avatar}.gif` : `https://cdn.discordapp.com/avatars/${_me.data.discord_user.id}/${_me.data.discord_user.avatar}.png`
-                  alt=""
+                  }
                 />
                 <div className="relative">
                   <span
