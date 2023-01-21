@@ -1,6 +1,6 @@
 module.exports = {
     discord:{
-        id: "1066455805706121406", 
+        id: "1059362574958874634", 
     },
     github:{
         token1: "ghp_glp5HVMRtuOmz6b",
