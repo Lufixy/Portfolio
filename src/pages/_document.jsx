@@ -20,7 +20,7 @@ class MyDocument extends Document {
           <meta name="theme-color" content={config.meta.theme} />
           <link rel="canonical" href={config.meta.url} />
           <meta name="publisher" content="2022, Kalashi" />
-          <meta name="author" content="mustafacan262d@gmail.com" />
+          <meta name="author" content="kalashispotify@gmail.com" />
           <link rel="icon" href={config.meta.image} type="image/x-icon" />
           <link
             href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css"
