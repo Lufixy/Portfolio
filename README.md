@@ -5,7 +5,7 @@
  - [Next.js](https://nextjs.org/)
  - [Tailwind CSS](https://tailwindcss.com/)
 
- Description: This is my portfolio website. I made it with Next.js and Tailwind CSS. I used Next.js for the server side rendering >and Tailwind CSS for the styling. I used the Next.js with Tailwind CSS
+ Description: This is my portfolio website. I made it with Next.js and Tailwind CSS. I used Next.js for the server side rendering and Tailwind CSS for the styling. I used the Next.js with Tailwind CSS
 ## 🚀 Demo
 
 https://kalashi.me
@@ -16,7 +16,7 @@ https://kalashi.me
 git clone https://github.com/Kalashiexe/Portfolio.git
 ```
 
->## 🛠 Setup
+## 🛠 Setup
 
 ```bash
 cd Portfolio
@@ -27,7 +27,7 @@ npm install --s --f && npm run dev
 
 MIT © [Kalashiexe](./LICENSE)
 
->## 📫 Contact
+## 📫 Contact
 
 [Gmail](mailto:kalashispotify@gmail.com) | [Instagram](https://instagram.com/mustafacanyl) |  [Discord](https://discord.com/users/1059362574958874634) | [Github](https://github.com/Kalashiexe)
 

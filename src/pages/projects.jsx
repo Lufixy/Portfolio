@@ -12,7 +12,7 @@ export default function Projects() {
       exit={{ opacity: 0 }}
       transition={{ duration: 1 }}
     >
-      <div className="px-10 mt-10 mb-10 p-4">
+      <div className=" mt-10 mb-10 p-4">
         <h1 className="text-3xl font-bold  text-black dark:text-white">
           Projects
         </h1>
