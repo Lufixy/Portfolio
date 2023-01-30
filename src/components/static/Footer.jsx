@@ -40,12 +40,18 @@ export default function Footer() {
         exit={{ opacity: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <div className="px-10  mt-10 sm:mb-0 mb-16 ">
+        <div className="p-5 mt-10 sm:mb-0 mb-16 ">
           <div className="w-full items-center  h-12">
             <div className="flex justify-between items-center">
               <div className="flex items-center md:font-medium">
-                <Tippy content="Merâ" className="dark:bg-gray-800/50 ">
-                  <span className="bg-black/20 dark:bg-gray-800/50 dark:text-white  px-3 py-1 font-bold text-sm rounded-md">
+                <Tippy 
+                content="Merâ"
+                placement="top"
+                theme="light"
+                arrow={false}
+                className="dark:bg-gray-800/50"
+                >
+                  <span className="bg-gray-800/30 dark:text-white  px-3 py-1 font-bold text-sm rounded-md">
                     v1.2
                   </span>
                 </Tippy>

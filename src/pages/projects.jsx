@@ -1,9 +1,10 @@
-import axios from "axios";
-import config from "../../config";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-export default function Projects({ data }) {
+import swr from "../lib/swr";
+export default function Projects() {
+  const { data: projects } = swr("/api/v1/project");
+  const data = projects ? projects : [];
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -60,14 +61,3 @@ export default function Projects({ data }) {
   );
 }
 
-//server side props
-
-export async function getServerSideProps(context) {
-  const res = await axios.get(config.meta.url + "/api/v1/project");
-  const data = await res.data;
-  return {
-    props: {
-      data,
-    },
-  };
-}

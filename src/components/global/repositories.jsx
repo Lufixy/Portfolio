@@ -18,14 +18,14 @@ export default function respo() {
       
       <div className="w-full mt-5 ">
         <div className="flex flex-wrap gap-3">
-        
-        {data
+          <div className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-3 w-full">
+          {data
           ?.slice(0, 8)
           ?.sort((a, b) => b.stargazers_count - a.stargazers_count)
           ?.map?.((repo, index) => (
             <Link href={repo?.html_url} key={index}>
               <div
-                className="w-full  h-28 border-[1px] border-[#e2e3e5] dark:border-[#1a1a1c]  bg-[#fafcfb] dark:bg-[#151516] shadow-lg   rounded-md   cursor-pointer transition-all duration-200 hover:scale-[1.02]   mt-8 md:w-1/2 lg:w-1/3 pr-2"
+                className="w-full  border-[1px] border-[#e2e3e5] dark:border-[#1a1a1c]  bg-[#fafcfb] dark:bg-[#151516] shadow-lg   rounded-md   cursor-pointer transition-all duration-200 hover:scale-[1.02]   mt-8  pr-2"
                 key={index}
               >
                 <motion.div
@@ -38,9 +38,6 @@ export default function respo() {
                     <h1 className="text-lg font-medium text-black dark:text-white">
                       {repo?.name}
                     </h1>
-                    <p className="text-sm text-black dark:text-white">
-                      {repo?.description}
-                    </p>
                     <div className="flex justify-between items-center mt-9">
                       <div className="text-black m dark:text-white">
                         by{" "}
@@ -71,6 +68,8 @@ export default function respo() {
               </div>
             </Link>
           ))}
+          </div>
+       
           </div>
           </div>
       </div>
