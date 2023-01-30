@@ -1,8 +1,12 @@
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
-export default function Teach({ data }) {
+import swr from "../../lib/swr";
+export default function Teach() {
+  const { data: tech } = swr("/api/v1/teach");
+  const data = tech ? tech : [];
+
   return (
-    <div className="mt-24 p-4 ">
+    <div className="mt-16">
       <div className="text-2xl font-bold flex items-center dark:text-white  ">
         <div className="w-10 h-10  rounded-full items-center flex justify-center mr-2">
           <i className="fas fa-book text-indigo text-3xl" />
@@ -11,9 +15,9 @@ export default function Teach({ data }) {
       </div>
       <div className="flex mt-5 flex-wrap">
         {data ? (
-          data.map?.((item, index) => (
+          data.map((item, index) => (
             <div
-              className="w-full cursor-pointer transition-all duration-200 hover:shadow-md hover:scale-[1.02] md:w-1/2 lg:w-1/5 mt-2 pr-2"
+              className="w-full cursor-pointer transition-all duration-200 hover:shadow-md hover:scale-[1.02] md:w-1/2 lg:w-1/3 mt-2 pr-2"
               key={index}
             >
               <motion.div

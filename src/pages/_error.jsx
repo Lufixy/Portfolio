@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 
 export default function Error() {
   const router = useRouter();
-
+  
   return (
     <div className="h-screen flex justify-center items-center text-center">
       <div>
@@ -25,3 +25,4 @@ export default function Error() {
     </div>
   );
 }
+

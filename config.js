@@ -7,7 +7,7 @@ module.exports = {
         token2: "sQrU6hpJNdqo10J2IkmuF"
     },
     about:{
-        description: "I'm a software engineer, I love to code and I'm a big fan of open source.", 
+        description: "I'm a 18 years old developer from Turkey. I'm currently working on my own projects and learning new things.",
     },
     social:{
         github: "https://github.com/kalashiexe",

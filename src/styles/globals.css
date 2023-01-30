@@ -362,4 +362,27 @@
       }
     }
 
-  
+
+    .layout-color {
+      left: 0;
+      top: 0;
+      bottom: 0;
+      max-width: 100%;
+      width: 100%;
+      filter: blur(100px);
+      opacity: 25%;
+      z-index: -1;
+      position: fixed;
+    }
+    
+    .layout-right {
+      background: radial-gradient(at 70% 70%, #cc24eed2 5%, #4649a817 50%);
+    }
+    
+    .layout-left {
+      
+      background: radial-gradient(at 30% 30%, #252abbf5 5%, #4649a817 50%);
+    
+    
+    }
+    

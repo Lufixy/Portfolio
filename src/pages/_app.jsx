@@ -45,12 +45,16 @@ function MyApp({ Component, pageProps }) {
           />
           <meta name="description" content={config.meta.description} />
         </Head>
-        <div className="mx-auto max-w-7xl ">
+        <div className="mx-auto max-w-5xl ">
           <Header />
           <Component {...pageProps} />
           <Footer />
+          <div className="layout-color layout-right"></div>
+      <div className="layout-color layout-left"></div>
         </div>
+        
       </div>
+    
     </>
   );
 }

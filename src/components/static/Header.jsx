@@ -49,7 +49,7 @@ export default function Header() {
           {config.titles.map((title, index) => (
             <Link href={title.url.toLowerCase()} key={index}>
               <a
-                className={` text-md font-light translation duration-300 ${
+                className={` text-lg font-light translation duration-300 ${
                   router.pathname === title.url
                     ? "text-indigo"
                     : "text-black/75 hover:text-indigo dark:text-white/50 dark:hover:text-white"
