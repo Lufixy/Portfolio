@@ -29,5 +29,5 @@ MIT © [Kalashiexe](./LICENSE)
 
 ## 📫 Contact
 
-[Gmail](mailto:kalashispotify@gmail.com) | [Instagram](https://instagram.com/mustafacanyl) |  [Discord](https://discord.com/users/1059362574958874634) | [Github](https://github.com/Kalashiexe)
+[Gmail](mailto:kalashispotify@gmail.com) |  [Discord](https://discord.com/users/1059362574958874634) | [Github](https://github.com/Kalashiexe)
 
