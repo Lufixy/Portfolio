@@ -1,6 +1,6 @@
 module.exports = {
     discord:{
-        id: "1059362574958874634", 
+        id: "1098972952382419104", 
     },
     github:{
         token1: "ghp_glp5HVMRtuOmz6b",
@@ -10,8 +10,7 @@ module.exports = {
         description: "I'm a 18 years old developer from Turkey. I'm currently working on my own projects and learning new things.",
     },
     social:{
-        github: "https://github.com/kalashiexe",
-        instagram: "https://instagram.com/mustafacanyl",
+        github: "https://github.com/kalashiexe"
     },
     meta:{
         title: 'My Personal Website',
