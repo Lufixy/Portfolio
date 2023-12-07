@@ -13,7 +13,7 @@ https://kalashi.me
 ## 📦 Installation
 
 ```bash 
-git clone https://github.com/Kalashiexe/Portfolio.git
+git clone https://github.com/Lufixy/Portfolio.git
 ```
 
 ## 🛠 Setup
@@ -29,5 +29,5 @@ MIT © [Lufixy](./LICENSE)
 
 ## 📫 Contact
 
-[Gmail](mailto:kalashispotify@gmail.com) |  [Discord](https://discord.com/users/1059362574958874634) | [Github](https://github.com/Lufixy)
+[Gmail](mailto:mustafacan262d@gmail.com) |  [Discord](https://discord.com/users/243101949606625281) | [Github](https://github.com/Lufixy)
 
