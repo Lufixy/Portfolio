@@ -1,4 +1,4 @@
-# Portfolio made by [Kalashiexe](https://github.com/Kalashiexe)
+# Portfolio made by [Kalashiexe](https://github.com/Lufixy)
 
 ## 📝 Credits
 
