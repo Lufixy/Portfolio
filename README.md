@@ -25,7 +25,7 @@ npm install --s --f && npm run dev
 
 ## 📄 License
 
-MIT © [Kalashiexe](./LICENSE)
+MIT © [Lufixy](./LICENSE)
 
 ## 📫 Contact
 
