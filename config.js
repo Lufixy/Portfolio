@@ -1,6 +1,6 @@
 module.exports = {
     discord:{
-        id: "1103619364881707108", 
+        id: "", 
     },
     github:{
         token1: "ghp_glp5HVMRtuOmz6b",
@@ -10,7 +10,7 @@ module.exports = {
         description: "I'm a 18 years old developer from Turkey. I'm currently working on my own projects and learning new things.",
     },
     social:{
-        github: "https://github.com/kalashiexe",
+        github: "https://github.com/Lufixy",
         instagram: ""
     },
     meta:{
@@ -18,10 +18,10 @@ module.exports = {
         description: 'My Personal Website',
         theme: '#02060f',
         lang: 'en',
-        url: 'https://kalashi.me',
+        url: '',
         image: '',
     },
-    title: 'Kalashi',
+    title: 'Lufixy',
     titles:[
         {title: 'Home', url: '/', icon: 'fa-house'},
         {title: 'Projects', url: '/projects' ,icon: 'fa-blog'},
