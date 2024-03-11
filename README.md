@@ -8,7 +8,7 @@
  Description: This is my portfolio website. I made it with Next.js and Tailwind CSS. I used Next.js for the server side rendering and Tailwind CSS for the styling. I used the Next.js with Tailwind CSS
 ## 🚀 Demo
 
-https://kalashi.me
+[https://kalashi.me](https://mustafacanyl.vercel.app/)
 
 ## 📦 Installation
 
